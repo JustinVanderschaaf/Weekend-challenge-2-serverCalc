@@ -7,9 +7,39 @@
     <script src="scripts/jquery.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="styles/main.css"/>
-    <title>Server calculator</title>
+    <title>Server Side calculator</title>
 </head>
 <body>
     <h1>Calculator!!</h1>
+
+    <form id="calculatorForm">
+        <input
+            type="number"
+            placeholder="first number"
+            id="firstInput"
+        />
+        <button id=plus>+</button>
+        <button id=minus>-</button>
+        <button id=multiply>*</button>
+        <button id=divide>/</button>
+        <input
+        type="number"
+        placeholder="second number"
+        id="secondInput"
+    />
+        <input 
+        type="submit"
+        value='='
+        />
+        <button id=clear>C</button>
+    </form>
+
+    <h2 id=displayResult>00</h2>
+    <break></break>
+    <ul id=dispalyCalc>
+        <li>23</li>
+        <li>12</li>
+    </ul>
+
 </body>
 </html>

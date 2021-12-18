@@ -3,11 +3,11 @@ $(document).ready(onReady);
 function onReady() {
     console.log(`So damn ready 🐷`);
 
-    // $('button').on('click', function(evt){
-    //     evt.preventDefault();
-    //     operator = $(this).text();
-    //     console.log(operator); // print the value of i in the console
-    // });
+    $('button').on('click', function(evt){
+        evt.preventDefault();
+        operator = $(this).text();
+         console.log(operator); // print the value of i in the console
+        });
     $('#calculatorForm').on('submit', addCalculation);
     refresh();
 }
@@ -23,7 +23,7 @@ function addCalculation(evt) {
     let equation = {
         firstNum: $('#firstInput').val(),
         secondNum: $('#secondInput').val(),
-        // operators: operator
+        operators: operator
     }
     console.log('equation',equation);
 
@@ -81,7 +81,8 @@ function render(answers) {
     for (let result of answers) {
         $('#displayCalc').append(`
             <li>
-                ${result.firstNum}${result.secondNum}
+                ${result.firstNum} ${result.operators}
+                ${result.secondNum} =
                 <div>
                 
                 </div>

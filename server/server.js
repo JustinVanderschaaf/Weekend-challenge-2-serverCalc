@@ -10,7 +10,9 @@ app.use(bodyParser.json());
 
 let answers = [
     {firstNum:24,
-    secondNum:12}
+    secondNum:12,
+    operators:'+'
+}
 ];
 
 

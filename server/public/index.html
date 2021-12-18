@@ -1,45 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="scripts/jquery.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
-    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <title>Server Side calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Server Side calculator</h1>
 
     <form id="calculatorForm">
-        <input
-            type="number"
-            placeholder="first number"
-            id="firstInput"
-        />
-        <button type ="button" id=plus>+</button>
-        <button type ="button" id=minus>-</button>
-        <button type ="button" id=multiply>*</button>
-        <button type ="button" id=divide>/</button>
-        <input
-            type="number"
-            placeholder="second number"
-            id="secondInput"
-        />
-        <input 
-            type="submit"
-            value='='
-        />
-        <button type="button" id=clear>C</button>
+      <input type="number" placeholder="first number" id="firstInput" />
+      <button type="button" id="plus">+</button>
+      <button type="button" id="minus">-</button>
+      <button type="button" id="multiply">*</button>
+      <button type="button" id="divide">/</button>
+      <input type="number" placeholder="second number" id="secondInput" />
+      <input type="submit" value="=" />
+      <button type="button" id="clear">C</button>
     </form>
 
-    <h2 id=displayResult>00</h2>
+    <h2 id="displayResult">00</h2>
     <break></break>
-    <ul id=displayCalc>
-        <li>10+3=23</li>
-        <li>26-14=12</li>
+    <ul id="displayCalc">
+      <li>10+3=23</li>
+      <li>26-14=12</li>
     </ul>
-
-</body>
+  </body>
 </html>

@@ -13,15 +13,15 @@
 []set up frame work HTML
     [√]user has two input fields for values
     [√]user selects operator
-    []submit button when clicked captures input and bundles it in object
-    []send object to the server via post
+    [√]submit button when clicked captures input and bundles it in object
+    [√]send object to the server via post
     []clear button that clears the user input fields
 []server side logic
     []use the object sent from client side to do the needed math
     []send back an ok
     []use GET request after the post to get the calculation
-[]History
-    []store the history in an array on server side
-    []display a list of all previous calculations of page loads
-    []using a get request.
-    []list updates upon new calculation
+[√]History
+    [√]store the history in an array on server side
+    [√]display a list of all previous calculations of page loads
+    using a get request.
+    [√]list updates upon new calculation

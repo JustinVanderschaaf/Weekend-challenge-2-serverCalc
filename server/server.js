@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 let answers = [{ firstNum: 24, secondNum: 12, operators: "+" }];
-let result = "8"
+let result = "8";
 // GET /answers endpoint
 // localhost:5000/answers
 //2a-----coming to app.get /answers to get
@@ -18,12 +18,9 @@ app.get("/answers", (req, res) => {
 });
 //------
 app.get("/result", (req, res) => {
-    console.log("in GET /result");
-    res.send(result);
-  });
-
-
-
+  console.log("in GET /result");
+  res.send(result);
+});
 
 // --------------2b
 app.post("/equation", (req, res) => {

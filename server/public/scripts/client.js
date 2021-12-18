@@ -10,8 +10,6 @@ function onReady() {
   });
   $("#calculatorForm").on("submit", addCalculation);
   refresh();
-  
-  
 }
 let operator;
 
@@ -46,7 +44,7 @@ function addCalculation(event) {
     // and render to the DOM
     refresh();
   });
-  total()
+  total();
 }
 
 function refresh() {
@@ -90,13 +88,11 @@ function render(answers) {
   }
 }
 
-function totalRender(total){
-    $("#displayResult").text(`${total}`)
+function totalRender(total) {
+  $("#displayResult").text(`${total}`);
 }
 
 function total() {
-
-
   let ajax = {
     method: "GET",
     url: "/result",

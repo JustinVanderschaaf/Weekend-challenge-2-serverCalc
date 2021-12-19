@@ -11,7 +11,10 @@ function onReady() {
   refresh();
 }
 let operator;
-
+function ClearFields() {
+  $("#firstInput").val("");
+  $("#secondInput").val("");
+}
 function addCalculation(event) {
   // Don't reload the page!
   event.preventDefault();

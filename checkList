@@ -10,12 +10,12 @@
     [√]express install
     [√]gitignore folder w/node_modules inside
     [√]install body parsers  
-[]set up frame work HTML
+[√]set up frame work HTML
     [√]user has two input fields for values
     [√]user selects operator
     [√]submit button when clicked captures input and bundles it in object
     [√]send object to the server via post
-    []clear button that clears the user input fields
+    [√]clear button that clears the user input fields
 [√]server side logic
     [√]use the object sent from client side to do the needed math
     [√]send back an ok

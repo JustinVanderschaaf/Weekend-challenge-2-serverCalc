@@ -13,6 +13,8 @@ function onReady() {
 }
 let operator;
 
+
+
 function addCalculation(event) {
   // Don't reload the page!
   event.preventDefault();
@@ -24,6 +26,7 @@ function addCalculation(event) {
     firstNum: $("#firstInput").val(),
     secondNum: $("#secondInput").val(),
     operators: operator,
+    total:0
   };
   console.log("equation", equation);
 
@@ -44,7 +47,7 @@ function addCalculation(event) {
     // and render to the DOM
     refresh();
   });
-  total();
+  
 }
 
 function refresh() {
@@ -73,13 +76,13 @@ function refresh() {
 }
 
 function render(answers) {
-  // Do some jQuery to render comments (state) to the DOM
+  // (state) to the DOM
   $("#displayCalc").empty();
   for (let result of answers) {
     $("#displayCalc").append(`
             <li>
                 ${result.firstNum} ${result.operators}
-                ${result.secondNum} =
+                ${result.secondNum} = ${result.total}
                 <div>
                 
                 </div>
@@ -88,8 +91,20 @@ function render(answers) {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 function totalRender(total) {
   $("#displayResult").text(`${total}`);
+  
 }
 
 function total() {

@@ -2,7 +2,6 @@ $(document).ready(onReady);
 
 function onReady() {
   console.log(`So damn ready 🐷`);
-
   $("button").on("click", function (evt) {
     evt.preventDefault();
     operator = $(this).text();
@@ -12,8 +11,6 @@ function onReady() {
   refresh();
 }
 let operator;
-
-
 
 function addCalculation(event) {
   // Don't reload the page!
@@ -26,7 +23,7 @@ function addCalculation(event) {
     firstNum: $("#firstInput").val(),
     secondNum: $("#secondInput").val(),
     operators: operator,
-    total:0
+    total: 0,
   };
   console.log("equation", equation);
 
@@ -47,7 +44,6 @@ function addCalculation(event) {
     // and render to the DOM
     refresh();
   });
-  
 }
 
 function refresh() {
@@ -88,23 +84,12 @@ function render(answers) {
                 </div>
             </li>
         `);
+    $("#displayResult").text(result.total);
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 function totalRender(total) {
   $("#displayResult").text(`${total}`);
-  
 }
 
 function total() {
